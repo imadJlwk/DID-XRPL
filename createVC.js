@@ -16,7 +16,7 @@ function signData(data, privateKey) {
 async function createAndSignVC(didIssuer, didUser, privateKeyIssuerForAssertion) {
     // Define a verifiable credential with the subject details and issuance metadata
     const vc = {
-        "@context": "https://www.w3.org/2018/credentials/v1",
+        "context": "https://www.w3.org/2018/credentials/v1",
         "type": ["VerifiableCredential"],
         "issuer": didIssuer,
         "issuanceDate": new Date().toISOString(),
